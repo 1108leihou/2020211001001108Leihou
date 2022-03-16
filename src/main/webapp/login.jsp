@@ -12,15 +12,12 @@
 </head>
 <body>
 
-<form method="post">
+<form method="post" action="register">
     Username: <input type="text" name="username"/><br/>
     Password: <input type="password" name="password"/><br/>
-    Email: <input type="email" name="email"/><br>
-    <select id="sex" name="sex">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-    </select><br/>
-    <input type="submit" value="Register"/>
+    Email: <input type="text" name="email"/><br>
+    Gender: <input type="radio" name = "gender"> Male <input type="radio" name = "gender"> Female<br/>
+    <input type="submit" value="register"/>
 </form>
 
 </body>

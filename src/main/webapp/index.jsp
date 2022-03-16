@@ -10,7 +10,7 @@
 <br/>
 <a href="login.jsp">login</a>
 <br/>
-<a href="info">Hello</a>
+<a href="hello">Hello</a>
 
 </body>
 </html>
