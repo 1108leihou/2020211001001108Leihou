@@ -5,12 +5,13 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Welcome!" %>
+<h1><%= "Hello World!!!!!" %>
 </h1>
 <br/>
-<a href="login.jsp">login</a>
+<a href="hello">Hello Servlet</a>
 <br/>
-<a href="hello">Hello</a>
-
+<a href="config">config</a>
+<br/>
+<a href="register.jsp">register</a> <br/>
 </body>
 </html>

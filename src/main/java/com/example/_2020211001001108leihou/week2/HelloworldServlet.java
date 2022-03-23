@@ -12,11 +12,12 @@ public class HelloworldServlet extends HttpServlet {
         //        当客户端请求方式是GET
 
         PrintWriter writer = response.getWriter();
-        writer.println("Nickname: Leihou");
+        writer.println("Nickname: LeiHou");
         writer.println("ID: 2020211001001108");
         writer.println("Date and Time: 2022-03-09 13:22");
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response){
         //        当客户端请求方式是Post
     }
+
 }
