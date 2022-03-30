@@ -29,5 +29,3 @@
 </html>
 
 <%@include file="footer.jsp"%>
-
-
