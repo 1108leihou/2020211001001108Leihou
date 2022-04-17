@@ -16,16 +16,20 @@ public class register extends HttpServlet {
     @Override
     public void init() throws ServletException {
         super.init();
-        String driver = getServletContext().getInitParameter("driver");
-        String url = getServletContext().getInitParameter("url");
-        String usr = getServletContext().getInitParameter("usr");
-        String password = getServletContext().getInitParameter("password");
-        try {
-            Class.forName(driver);
-            con = DriverManager.getConnection(url, usr, password);
-            System.out.println("连接成功");
-        } catch (ClassNotFoundException | SQLException e) {
-            e.printStackTrace();
+//        String driver = getServletContext().getInitParameter("driver");
+//        String url = getServletContext().getInitParameter("url");
+//        String usr = getServletContext().getInitParameter("usr");
+//        String password = getServletContext().getInitParameter("password");
+//        try {
+//            Class.forName(driver);
+//            con = DriverManager.getConnection(url, usr, password);
+//            System.out.println("连接成功");
+//        } catch (ClassNotFoundException | SQLException e) {
+//            e.printStackTrace();
+//        }
+        con = (Connection) getServletContext().getAttribute("con");
+        if(con == null) {
+            System.out.println("wochao");
         }
     }
 
@@ -82,6 +86,7 @@ public class register extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        //        resp.sendRedirect("Login.jsp");
     }
 
     @Override
