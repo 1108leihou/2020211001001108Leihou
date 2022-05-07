@@ -1,30 +1,50 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="header.jsp"%>
-<div style="text-align: center;">
-    <h2>Welcome to My Online shop Home page</h2> <br/>
-    <form method="post" target="_blank" action="SearchServlet">
-        <input type="text" name="txt" size = 55 />
-        <select name="search">
-            <option value="baidu">Baidu</option>
-            <option value="bing">Bing</option>
-            <option value="goolge">Google</option>
-        </select>
-        <input type="submit" value="Search">
-    </form>
+<%--<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSP - Hello World</title>
+</head>
+--%>
 
-    <br/><br/>
-    <a href="hello">Hello Servlet</a>
-    <br/>
-    <a href="hello">Student Info Servlet</a>
-    <br/>
-    <a href="register">Register and JDBC </a>
-    <br/>
-    <a href="register.jsp">register </a>
-    <br/>
-    <a href="config">config </a>
-    <br/>
-    <a href="Myjsp.jsp">Myjsp </a>
-    <br/>
-    <b><a href="Login.jsp">Login </a></b>
-</div>
+<body style="background-color: lavender">
+
+<%@include file="header.jsp"%>
+
+
+<%-- <h1><%= "Welcome to my home page" %>
+</h1>
+<br/>
+<a href="hello-servlet">Hello Servlet-week1</a>
+<br/>
+<a href="hello">Student Info Servlet-week2</a>
+<br/>
+<a href="life">Life Cycle Servlet-week3</a>
+<br/>
+<a href="register.jsp">Register-getParameter-week3</a>
+<br/>
+<a href="config">Config parameter-week4</a>
+<br/>
+<a href="register.jsp">Register JDBC-week4</a>
+<br/>
+<a href="index.jsp">include-week5</a>
+<br/>
+<a href="login.jsp">Login-week5</a>
+<br/> --%>
+<h2>Welcome to My Online Shop Home Page</h2> <br>
+<form method="get" target="_blank" action="search">
+    <input type="text" name="txt" size=30/>
+    <select name="search">
+        <option value="Baidu">Baidu</option>
+        <option value="Bing">Bing</option>
+        <option value="Google">Google</option>
+    </select>
+    <input type="submit" value="Search"/>
+</form>
+
 <%@include file="footer.jsp"%>
+
+
+
+</body>
+<%--
+</html>--%>
