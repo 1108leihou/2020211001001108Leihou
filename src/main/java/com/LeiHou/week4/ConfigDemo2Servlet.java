@@ -12,8 +12,8 @@ import java.io.PrintWriter;
 @WebServlet(name = "ConfigDemo2Servlet",
         urlPatterns = {"/config2"},
         initParams = {
-                @WebInitParam(name= "name", value="HuangXingyue"),
-                @WebInitParam(name= "studentId", value= "2020211001001101"),
+                @WebInitParam(name= "name", value="LeiHou"),
+                @WebInitParam(name= "studentId", value= "2020211001001108"),
         }
 )
 public class ConfigDemo2Servlet extends HttpServlet {

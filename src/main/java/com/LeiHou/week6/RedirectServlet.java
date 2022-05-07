@@ -18,18 +18,18 @@ public class RedirectServlet extends HttpServlet {
         System.out.println("before redirect ");
 
         //response.sendRedirect("index.jsp");//url- change to index.jsp
-        //http://localhost:8080/HuangXingyue2020211001001101/rediirect
-        //http://localhost:8080/HuangXingyue2020211001001101/index.jsp
+        //http://localhost:8080/LeiHou2020211001001108/rediirect
+        //http://localhost:8080/LeiHou2020211001001108/index.jsp
         //see the url - only last part of url changed ( redirect --> index.jsp )
         System.out.println("after redirect ");
 
         //2.start with /
         //response.sendRedirect("/HuangXingyue2020211001001101/index.jsp");//- ??? -HTTP Status 404 - Not Found
         //why ? -look at url
-        //http://localhost:8080/HuangXingyue2020211001001101/redirect
+        //http://localhost:8080/LeiHou2020211001001108/redirect
         //http://localhost:8080/index.jsp
         //url change after 8080 - means tomcat
-        //add HuangXingyue2020211001001101/
+        //add LeiHou2020211001001108/
 
 
         //redirect - another server - Absolute URL - full url
