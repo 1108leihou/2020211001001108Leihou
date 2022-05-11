@@ -218,4 +218,3 @@ public class UserDao implements IUserDao {
         return (List<User>) user;
     }
 }
-
