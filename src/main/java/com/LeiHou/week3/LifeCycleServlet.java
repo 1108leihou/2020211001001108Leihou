@@ -41,7 +41,7 @@ public class LifeCycleServlet extends HttpServlet {
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
-        System.out.println("I am in init()->LifeCycleServlet "+con);//line 2
+        System.out.println("c "+con);//line 2
     }
 
     //5.tomcat call  service(）--》 call doGet() or doPost()
@@ -67,4 +67,3 @@ public class LifeCycleServlet extends HttpServlet {
         }
     }
 }
-
