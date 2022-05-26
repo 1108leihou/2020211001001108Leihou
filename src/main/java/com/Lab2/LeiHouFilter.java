@@ -3,9 +3,6 @@ package com.Lab2;
 import javax.servlet.*;
 import java.io.IOException;
 
-import javax.servlet.*;
-import java.io.IOException;
-
 public class LeiHouFilter implements Filter {
     public void destroy() {
     }
