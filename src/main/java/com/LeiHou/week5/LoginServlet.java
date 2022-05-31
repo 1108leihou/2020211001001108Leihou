@@ -73,14 +73,9 @@ public class LoginServlet extends HttpServlet {
 
                 }
 
-               /* Cookie c =new Cookie("sessionid",""+user.getID());
-                c.setMaxAge(10*60);
-                response.addCookie(c);*/
-
                 HttpSession session = request.getSession();
                 System.out.println("session id -->"+session.getId());
-                session.setMaxInactiveInterval(10);
-
+                session.setMaxInactiveInterval(3600);
 
                 session.setAttribute("user",user);
                 request.getRequestDispatcher("WEB-INF/views/userList.jsp").forward(request,response);

@@ -19,13 +19,16 @@
         for (Cookie cookie:cookies){
             if (cookie.getName().equals("cUsername")){
                 username=cookie.getValue();
+                System.out.println("jsp username："+username);
             }
+
             if (cookie.getName().equals("cPassword")){
                 password=cookie.getValue();
             }
             if (cookie.getName().equals("cRememberMe")){
                 rememberMe=cookie.getValue();
             }
+
         }
     }
     //update 5 user basepath
