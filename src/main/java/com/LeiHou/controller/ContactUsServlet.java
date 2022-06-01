@@ -6,26 +6,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Connection;
 
-@WebServlet("/admin/userList")
-public class UserListServlet extends HttpServlet {
-    private Connection con = null;
-
-    public void init() throws ServletException {
-        con = (Connection)getServletContext().getAttribute("con");
-    }
-
-    public void destroy(){
-        super.destroy();
-    }
+@WebServlet("/contactUs")
+public class ContactUsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String path = "/WEB-INF/views/admin/userList.jsp";
+        String path="/WEB-INF/views/contactUs.jsp";
         request.getRequestDispatcher(path).forward(request,response);
     }
-
 }
