@@ -56,10 +56,10 @@
 							</td>
 
 						<%
-							com.HuangXingyue.model.Product  p = (com.HuangXingyue.model.Product) pageContext.findAttribute("p");
+							com.LeiHou.model.Product  p = (com.LeiHou.model.Product) pageContext.findAttribute("p");
 							int pid = p.getProductId();
 							java.sql.Connection con = (java.sql.Connection) application.getAttribute("con");
-							String catName = com.HuangXingyue.model.Category.findByCategoryId(con,pid);
+							String catName = com.LeiHou.model.Category.findByCategoryId(con,pid);
 						%>
 							<td class="cart_quantity"><%=catName%></td>
 
